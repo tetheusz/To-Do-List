@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="./assets/fonts/bebas_neue.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    <div class="content">
+        <div class="content--add-item">
+            <input type="text" id="input-new-task" placeholder="Digite sua nova tarefa!">
+            <button onclick="newTask()" id="button-new-task" title="Adicionar nova tarefa">
+                +
+            </button>
+        </div>
+
+        <div class="content--body">
+            <ul id="task-list">
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</html>
